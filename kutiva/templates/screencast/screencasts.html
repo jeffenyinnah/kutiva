@@ -22,7 +22,16 @@
 
 {% block content %}
     {#    include the main menu #}
-    {% include "kutiva/layout/front-menu.html" %}
+    {% if user.is_authenticated %}
+         {#    include the main menu #}
+            {% include "screencast/layout/menu.html" %}
+
+            
+        {% else %}
+            {% include "kutiva/layout/menu.html" %}
+
+    {% endif %}
+
     <div class="showcase">
             <form action="search" method="post">
                 <input type="search" placeholder="search">
