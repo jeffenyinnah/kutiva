@@ -1,1 +1,1 @@
-web: gunicorn market.wsgi --log-file -
+web: gunicorn kutiva.wsgi --log-file -

@@ -1,0 +1,38 @@
+html{
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+
+}
+
+.container{
+    display: flex;
+
+  justify-content: center;
+  align-items: center;
+    flex-direction: column;
+
+
+
+}
+.player{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+video{
+    padding-top: 30px;
+    align-self: center;
+    width: 80%;
+}
+.description{
+    margin-top: 20px;
+    width: 77%;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 1px rgba(0,0,0,.15)
+}

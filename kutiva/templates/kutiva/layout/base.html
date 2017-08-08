@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport", content="width=device-width, initial-scale=1">
+
+   <!-- title goes here -->
+    {% block title %}
+
+    {% endblock %}
+
+    <!-- style goes here -->
+{#    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">#}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    {% block styles %}
+
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/footer.css' %}">
+    <!-- scripts goes here -->
+    
+    {% block scripts %}
+
+    {% endblock %}
+</head>
+    <body>
+        <!-- content goes here -->
+        {% block  content %}
+
+        {%  endblock%}
+    </body>
+</html>
