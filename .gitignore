@@ -3,7 +3,7 @@ venv
 staticfiles
 .env
 .idea
-
+.venv
 
 
 
