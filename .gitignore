@@ -4,6 +4,7 @@ staticfiles
 .env
 .idea
 .venv
+db.sqlite3
 
 
 
