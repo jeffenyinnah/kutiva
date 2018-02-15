@@ -23,6 +23,6 @@ urlpatterns = [
     url(r'^$', views.index, name="index"),
     url(r'^account/', include('account.urls')),
     url(r'^screencast/', include('screencast.urls')),
-   
+    url(r'^cms/', include('cms.urls')),
 
 ]
