@@ -1,10 +1,10 @@
-Kutiva CMS
+#Kutiva CMS
 
 
 This is kutiva e-learning platform  for people that are interested in learning how to program an improve their programming skills.
 
 
-# How to Use
+#How to Use
 This application use django 2 frammework a python web framework in order to ru this application you should have python3.6 or greater installed in your machine.
 To use this project, follow these steps:
 
