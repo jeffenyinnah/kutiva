@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.urls import path
+
 from . import views
 
 
@@ -24,5 +26,6 @@ urlpatterns = [
     url(r'^account/', include('account.urls')),
     url(r'^screencast/', include('screencast.urls')),
     url(r'^cms/', include('cms.urls')),
+    path('blog', include('blog.urls'))
 
 ]

@@ -28,3 +28,11 @@ body{
     width: 200px;
     height: 200px;
 }
+.post{
+    background-color: white;
+    width: 650px;
+    height: 200px;
+}
+.articlesTags{
+    flex-grow: 1;
+}
