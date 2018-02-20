@@ -28,11 +28,16 @@
            <h1>Educacao para todos</h1>
 
     </div>
-{#    categories #}
-     <div class="categories">
-             <ul class="category">
+
+     <div class="">
+             <ul class="cardRow  ">
+                 <li class="category">Web Development</li>
+                 <li class="category">frontend</li>
+                <li class="category">backend</li>
+                <li class="category">android</li>
+
                 {% for lesson in lessons %}
-                  <li class="title">{{ lesson.subject|capfirst }}</li>
+                  <li class="category"> Hwll{{ lesson.subject|capfirst }}</li>
                 {% endfor %}
 
              </ul>
@@ -45,8 +50,8 @@
 
 
 {#    screencasts #}
-    <div class="screencasts">
-         <div class="screencast">
+    <div class="cardRow">
+         <div class=" screencast ">
             {% for lesson in lessons %}
               <img src="{% static 'images/cover.jpg' %}" alt="screencast cover">
 
