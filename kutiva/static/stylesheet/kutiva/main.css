@@ -14,32 +14,3 @@ body{
     padding-top: 100px;
 }
 
-.category{
-    border: 1px solid  white;
-    width: auto;
-    margin: 20px;
-    padding: 10px;
-    border-radius:60px;
-    height: auto;
-    background-color: white;
-}
-.screencast{
-    background-color: white;
-    width: 200px;
-    height: 200px;
-}
-.articlesTags{
-}
-.articles{
-    flex-grow: 6;
-    margin: 20px;
-}
-
-.article{
-    background-color: white;
-    width:auto;
-    height: 200px;
-}
-.recommendScreencast{
-    flex-grow: 1;
-}
