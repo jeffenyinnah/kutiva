@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'^cms/', include('cms.urls')),
    # path('blog', include('blog.urls'))
 
+
 ]
