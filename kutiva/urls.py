@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name="index"),
     url(r'^account/', include('account.urls')),
+    url(r'^cursos/', include('course.urls')),
     url(r'^screencast/', include('screencast.urls')),
     url(r'^cms/', include('cms.urls')),
    # path('blog', include('blog.urls'))
