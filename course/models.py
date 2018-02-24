@@ -50,7 +50,7 @@ class Course(models.Model):
 	lessons 	= models.ForeignKey(Lesson, models.CASCADE)
 	level 		= models.ForeignKey(Level, models.CASCADE)
 	duration 	= models.TimeField(blank=True, null=True)
-	views 		= models.IntegerField()
+	views 		= models.IntegerField(default=0)
 	tags 		= models.ManyToManyField(Tag, related_name='related_tag')
 	slug 	    = models.CharField(unique=True, max_length=250)
 	is_active   = models.BooleanField(default=True)
