@@ -14,11 +14,10 @@
 
 
   {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static '/vendor/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/stylesheet/kutiva/style.css' %}">
 
-  {% block styles %}
-
-
-  {% endblock %}
+  {% block styles %}{% endblock %}
   
 </head>
 <body class="{% block body_class %}{% endblock %}" id="{% block body_id %}{% endblock %}">
