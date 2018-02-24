@@ -28,11 +28,18 @@ body{
     width: 200px;
     height: 200px;
 }
-.post{
+.articlesTags{
+}
+.articles{
+    flex-grow: 6;
+    margin: 20px;
+}
+
+.article{
     background-color: white;
-    width: 650px;
+    width:auto;
     height: 200px;
 }
-.articlesTags{
+.recommendScreencast{
     flex-grow: 1;
 }
