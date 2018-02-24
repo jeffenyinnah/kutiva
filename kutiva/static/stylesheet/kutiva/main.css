@@ -1,0 +1,38 @@
+body{
+    min-width: 100%;
+   font-family: 'Open Sans', sans-serif;
+
+}
+.showcase{
+    background-color:white;
+    height:60vh;
+    /*background-image: url("../../images/12.jpg");*/
+}
+.showcase h1{
+    text-align: center;
+    color: #253858;
+    padding-top: 100px;
+}
+
+.category{
+    border: 1px solid  white;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+    border-radius:60px;
+    height: auto;
+    background-color: white;
+}
+.screencast{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+.post{
+    background-color: white;
+    width: 650px;
+    height: 200px;
+}
+.articlesTags{
+    flex-grow: 1;
+}

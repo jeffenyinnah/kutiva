@@ -1,0 +1,42 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <title>{% block page_title %} {% endblock %}</title>
+
+  {% block metas %}
+  {% endblock %}
+
+
+  {% load static %}
+
+  {% block styles %}
+
+
+  {% endblock %}
+  
+</head>
+<body class="{% block body_class %}{% endblock %}" id="{% block body_id %}{% endblock %}">
+
+  {% block body %}
+  {% include "kutiva/layout/header.html" %}
+
+  <div id="body-base" class="main-body">
+    {% block body_content %}
+    {% endblock %}
+
+    {% include "kutiva/layout/footer.html" %}
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock scripts %}
+
+</body>
+</html>

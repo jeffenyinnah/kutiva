@@ -1,0 +1,39 @@
+body{
+  background-color: #f3f6f8;
+
+}
+.sign{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+form{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    align-self: center;
+}
+input{
+    height: 44px;
+    width: 350px;
+    margin: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #dbe2e8;
+    font-size: 14px;
+    box-shadow: 0 2px 2px 0 rgba(46,60,73,.05);
+    border-radius: 2px;
+    color: #2e3d49;
+}
+
+input[type="submit"]{
+    border: none;
+    height: 44px;
+    background-color: #0275d8;
+    color: white;
+    width: 200px;
+}

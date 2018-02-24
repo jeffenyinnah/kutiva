@@ -1,0 +1,66 @@
+{% extends "kutiva/layout/base.html" %}
+{% load staticfiles %}
+
+{% comment %}
+
+{% endcomment %}
+{% load staticfiles %}
+
+{# overide the tile of the page #}
+{% block title %}
+    <title>kutiva</title>
+{% endblock %}
+
+{% block styles %}
+{#    only include css  files needed for thi page bootstap and other libs are add in base template #}
+    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/watch.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/footer.css' %}">
+
+
+{% endblock %}
+
+
+
+{% block content %}
+      {% if user.is_authenticated %}
+         {#    include the main menu #}
+             {% include "screencast/layout/menu.html" %}
+
+            <div class="container">
+                <div class="player">
+                    <video autoplay src="{% static 'video/welcome.mp4' %}" >
+
+                    </video>
+
+                </div>
+                <div class="description">
+                  <h1>{{ lesson.title }} </h1>
+                  <p>{{ lesson.description }}</p>
+                  <p>{{ lesson.date }}</p>
+                </div>
+            </div>
+        {% else %}
+            {% include "kutiva/layout/menu.html" %}
+
+            <div class="container">
+                <div class="player">
+                   <video controls poster="{% static 'images/prev-image.png' %}">
+                      <source src="movie.mp4" type="video/mp4">
+                      <source src="movie.ogg" type="video/ogg">
+                </video>
+
+                </div>
+                 <div class="description">
+                      <h1>{{ lesson.title }} </h1>
+                      <p>{{ lesson.description }}</p>
+                      <p>{{ lesson.date }}</p>
+                </div>
+            </div>
+        {% endif %}
+
+
+
+    {# include the same footer for ever page #}
+    {% include "kutiva/layout/footer.html" %}
+{% endblock %}
