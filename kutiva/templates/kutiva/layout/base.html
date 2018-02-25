@@ -1,39 +1,42 @@
-{% load staticfiles %}
+
+{% load i18n %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <meta charset="utf8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <title>{% block page_title %} {% endblock %}</title>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible", content="IE=edge">
-    <meta name="viewport", content="width=device-width, initial-scale=1">
+  {% block metas %}
+  {% endblock %}
 
-   <!-- title goes here -->
-    {% block title %}
 
-    {% endblock %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static '/vendor/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/stylesheet/kutiva/style.css' %}">
 
-    <!-- style goes here -->
-{#    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">#}
-    <link href="://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-    {% block styles %}
-
-    {% endblock %}
-    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/footer.css' %}">
-    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/library/malangatana.min.css' %}">
-
-    <!-- scripts goes here -->
-    
-    {% block scripts %}
-
-    {% endblock %}
+  {% block styles %}{% endblock %}
+  
 </head>
-    <body>
-        <!-- content goes here -->
-        {% block  content %}
+<body class="{% block body_class %}{% endblock %}" id="{% block body_id %}{% endblock %}">
 
-        {%  endblock%}
-    </body>
+  {% block body %}
+  {% include "kutiva/layout/header.html" %}
+
+  <div id="body-base" class="main-body">
+    {% block body_content %}z
+    {% endblock %}
+    
+    {% include "kutiva/layout/footer.html" %}
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock scripts %}
+
+</body>
 </html>

@@ -1,69 +1,143 @@
 {% extends "kutiva/layout/base.html" %}
-{% load staticfiles %}
 
-{% comment %}
+{% load i18n %}
 
-{% endcomment %}
-{% load staticfiles %}
+{% block metas %}
 
-{# overide the tile of the page #}
-{% block title %}
-    <title>kutiva</title>
-{% endblock %}
-
-{% block styles %}
-{#    only include css  files needed for thi page bootstap and other libs are add in base template #}
-    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/menu.css' %}">
-    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/main.css' %}">
 
 {% endblock %}
 
+{% block body_id %}home{% endblock %}
+{% block body_content %}
+        <div id="main-body">
+            <section id="hero">
+                <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box">
+                                <h2>Search for a course and start learning.</h2>
+                                <p>Find the perfect course to improve your skills and start racing ahead others.</p>
 
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="Search" autocomplete="off" name="search" class="form-control" id="id_search"  placeholder="Pesquisa">
+                                        <input type="submit" name="submit" id="id_submit" value="Buscar">
+                                        <select id="categories">
+                                            <option><i class="fa fa-file"></i> Categories</option>
+                                            <option> Categories 1</option>
+                                            <option> Categories 2</option>
+                                        </select>
 
-{% block content %}
-    {#    include the main menu #}
-    {% include "kutiva/layout/menu.html" %}
-    <div class="showcase">
+                                         <select id="authors">
+                                            <option><i class="fa fa-user"></i> Author</option>
+                                            <option> Author 1</option>
+                                            <option> Author 2</option>
+                                        </select>
 
-           <h1>Educacao para todos</h1>
+                                         <select id="skills">
+                                            <option><i class="fa fa-bars"></i> Skill LEvel</option>
+                                            <option> Level 1</option>
+                                            <option> Level 2</option>
+                                        </select>
+                                        <div class="search-loop"><i class="fa fa-search"></i></div>
+                                    </div>
+                                </form>
 
-    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
 
-     <div class="">
-             <ul class="cardRow  ">
-                 <li class="category">Web Development</li>
-                 <li class="category">frontend</li>
-                <li class="category">backend</li>
-                <li class="category">android</li>
+            <section id="featured-categories">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div class="box-title">
+                            <h3>Featured Courses</h3>
+                            <p>Browse our top courses on the fly and start learning with the best. We own courses coming from the best of each industry.</p>
+                        </div>
+                        <div class="row">
+                            {% for course in courses %}
+                            <div class="col-md-3">
+                                <div class="box" style="background-image: url({{ course.cover }});">
+                                    <div class="overlay">
+                                        <h3>{{ course.title }}</h3>
+                                     </div>
+                                </div>
+                            </div>
+                            {% empty %}
+                            <div class="col-md-12">
+                                <div class="box">
+                                    <p class="no-results">Nenhum resultado foi encontrado</p>
+                                </div>
+                            </div>
+                            {% endfor %}
 
-                {% for lesson in lessons %}
-                  <li class="category"> Hwll{{ lesson.subject|capfirst }}</li>
-                {% endfor %}
+                        </div>
 
-             </ul>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="pagination" class="box">
+                                {% if courses.has_other_pages %}
+                                <ul class="pagination">
+                                    {% if courses.has_previous %}
+                                    <li><a href="?pagina={{ courses.previous_page_number }}">Anterior</a></li>
+                                    {% endif %}
+                                    {% for i in page_range %}
+                                    {% if courses.number == i %}
+                                    <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                                    {% else %}
+                                    <li><a href="?pagina={{ i }}">{{ i }}</a></li>
+                                    {% endif %}
+                                    {% endfor %}
+                                    {% if courses.has_next %}
+                                    <li><a href="?pagina={{ courses.next_page_number }}">Próximo</a></li>
+                                    {% endif %}
+                                </ul>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="pagination-report">
+                                {% if paginator.num_pages < 2 %}
+                                <p>{{ current_page }} de {{ paginator.num_pages }} página </p>
+                                {% else %}
+                                <p>{{ current_page }} de {{ paginator.num_pages }} páginas </p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
 
-     </div>
+            <!--<section id="featured-categories">
+                <div class="container">
+                    <div class="row">
+                        <div class="box-title">
+                            <h3>Popular courses</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>-->
 
-
-
-
-
-
-{#    screencasts #}
-    <div class="cardRow">
-         <div class=" screencast ">
-            {% for lesson in lessons %}
-              <img src="{% static 'images/cover.jpg' %}" alt="screencast cover">
-
-                <h2 class="title"><a href="{% url 'watch' lesson.id %}">{{ lesson.title|capfirst }}</a></h2>
-            {% endfor %}
-         </div>
-
-
-    </div>
-
-
-    {# include the same footer for ever page #}
-    {% include "kutiva/layout/footer.html" %}
 {% endblock %}
 
+
+{% block scripts %}
+{% endblock scripts %}
