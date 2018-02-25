@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-SITE_ID = 1
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,14 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
-    'course',
-    'cms',
-    'screencast',
-
-    # Externals
-    'import_export',
     'account',
+    'cms',
+    'screencast'
+   ,
   
     
 ]
@@ -57,9 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware' , 
-    "account.middleware.LocaleMiddleware",
-    "account.middleware.TimezoneMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware' 
 ]
 
 ROOT_URLCONF = 'kutiva.urls'
@@ -75,7 +69,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                "account.context_processors.account",
             ],
         },
     },
