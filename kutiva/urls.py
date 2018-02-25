@@ -26,6 +26,6 @@ urlpatterns = [
     path('account/', include('account.urls')),
     path('screencast/', include('screencast.urls')),
     # path('cms/', include('cms.urls')),
-    # path('blog', include('blog.urls'))
+    path('blog', include('blog.urls'))
 
 ]

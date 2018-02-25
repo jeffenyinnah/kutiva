@@ -4,7 +4,7 @@ from django.urls import path,include
 from . import views
 
 urlpatterns = [
-    path('screencasts', views.screencasts, name="screencasts"),
+    path('', views.screencasts, name="screencasts"),
     path('watch/<id>', views.watch, name="watch"),
 
 ]
