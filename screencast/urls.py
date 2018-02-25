@@ -1,11 +1,10 @@
-from django.conf.urls import url, include
 from django.contrib import admin
+from django.urls import path,include
+
 from . import views
 
-
 urlpatterns = [
-    url(r'^screencasts', views.screencasts, name="screencasts"),
- 	url(r'^watch/(?P<id>\d+)/', views.watch, name="watch"),
-
+    path('screencasts', views.screencasts, name="screencasts"),
+    path('watch/<id>', views.watch, name="watch"),
 
 ]
