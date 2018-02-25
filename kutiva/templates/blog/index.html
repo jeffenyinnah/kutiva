@@ -1,0 +1,74 @@
+{% extends "kutiva/layout/base.html" %}
+{% load staticfiles %}
+
+{% comment %}
+
+{% endcomment %}
+{% load staticfiles %}
+
+{# overide the tile of the page #}
+{% block title %}
+    <title>kutiva Blog</title>
+{% endblock %}
+
+{% block styles %}
+{#    only include css  files needed for thi page bootstap and other libs are add in base template #}
+    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/main.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/blog.css' %}">
+
+{% endblock %}
+
+
+
+{% block content %}
+    {#    include the main menu #}
+    <main>
+       {% comment %} {% include "kutiva/layout/menu.html" %}{% endcomment %}
+
+
+        <aside class="articlesTags">
+                 <ul class="cardColumn unstyledList">
+                     <li class="category">Web Development</li>
+                     <li class="category">frontend</li>
+                    <li class="category">backend</li>
+                    <li class="category">android</li>
+
+                    {% for lesson in lessons %}
+                      <li class="category"> Hwll{{ lesson.subject|capfirst }}</li>
+                    {% endfor %}
+
+                 </ul>
+
+         </aside>
+
+        <article class="articles">
+                 <div class="cardColumn article">
+                     <h1 class="title">Hello Word</h1>
+                 </div>
+
+         </article>
+
+
+
+
+
+    {#    screencasts #}
+        <aside class="recommendScreencasts">
+             <div class="cardColumn recommendScreencast">
+                {% for lesson in lessons %}
+                  <img src="{% static 'images/cover.jpg' %}" alt="screencast cover">
+
+                    <h2 class="title"><a href="{% url 'watch' lesson.id %}">{{ lesson.title|capfirst }}</a></h2>
+                {% endfor %}
+             </div>
+
+
+        </aside>
+
+    </main>
+
+
+    {% include "kutiva/layout/footer.html" %}
+{% endblock %}
+
