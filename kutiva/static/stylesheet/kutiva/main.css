@@ -24,9 +24,15 @@ html{
     align-items: center;
     /*background-image: url("../../images/12.jpg");*/
 }
-.category{
+.categorys{
     background-color: white;
-    height: 50px;
+    height:auto;
+}
+.category{
+    border: 2px solid  #0084bf;
+    border-radius: 50px;
+    padding: 8px;
+    margin: 20px;
 }
 form input[type="search"]{
     height: 44px;

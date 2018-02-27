@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cba74bd6-76a2-48ae-87fe-e30cd1451922" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/kutiva/static/stylesheet/screencast/main.css" afterPath="$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/main.css" />
+      <change beforePath="$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/main.css" afterPath="$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/main.css" />
       <change beforePath="$PROJECT_DIR$/kutiva/templates/kutiva/index.html" afterPath="$PROJECT_DIR$/kutiva/templates/kutiva/index.html" />
-      <change beforePath="$PROJECT_DIR$/kutiva/templates/kutiva/layout/menu.html" afterPath="$PROJECT_DIR$/kutiva/templates/kutiva/layout/menu.html" />
-      <change beforePath="$PROJECT_DIR$/kutiva/templates/screencast/screencasts.html" afterPath="$PROJECT_DIR$/kutiva/templates/screencast/screencasts.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kutiva/templates/kutiva/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="122">
+              <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -50,21 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/menu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="190">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -127,9 +125,9 @@
         <option value="$PROJECT_DIR$/kutiva/templates/blog/index.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/kutiva/templates/kutiva/layout/menu.html" />
+        <option value="$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/menu.css" />
         <option value="$PROJECT_DIR$/kutiva/templates/kutiva/index.html" />
         <option value="$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/main.css" />
-        <option value="$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/menu.css" />
       </list>
     </option>
   </component>
@@ -334,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519708816588</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finish landing page menu">
+      <created>1519710149457</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519710149457</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -397,7 +402,8 @@
     <MESSAGE value="style blog landing page" />
     <MESSAGE value="include pillow model image render library" />
     <MESSAGE value="remove unnecessary library" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary library" />
+    <MESSAGE value="finish landing page menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish landing page menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,22 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kutiva/templates/kutiva/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kutiva/templates/kutiva/layout/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -643,10 +633,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kutiva/templates/kutiva/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="190">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kutiva/static/stylesheet/kutiva/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding />
         </state>
       </provider>
