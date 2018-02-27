@@ -1,21 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 html{
   height: 100%;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+
+
 }
-body{
+.main{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-   font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+
 
 }
 .showcase{
     margin-top: 1px;
-    background-color:white;
+    background-color:#F3F6F9;
     display: flex;
+    height: 60vh;
     justify-content: center;
     align-items: center;
     /*background-image: url("../../images/12.jpg");*/
+}
+.category{
+    background-color: white;
+    height: 50px;
 }
 form input[type="search"]{
     height: 44px;
@@ -37,17 +48,12 @@ form input[type="search"]{
     background-color:#f9f9f9;
     padding: 10px;
 }
-.categories{
-    flex-grow: 1;
 
-}
-.screencasts{
-    flex-grow: 6;
-}
 .screencast{
-    width: 70%;
+    width: 200px;
     margin: 10px;
     padding: 20px;
+
     background-color: white;
     box-shadow: 0 2px 1px rgba(0,0,0,.15)
 

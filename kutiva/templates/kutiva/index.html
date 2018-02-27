@@ -21,16 +21,18 @@
 
 
 {% block content %}
+
+    <main>
     {#    include the main menu #}
     {% include "kutiva/layout/menu.html" %}
-    <div class="showcase">
+    <section class="showcase">
 
            <h1>Educacao para todos</h1>
 
-    </div>
+    </section>
 
-     <div class="">
-             <ul class="cardRow  ">
+     <section class="category">
+             <ul class="cardRow unstyledList">
                  <li class="category">Web Development</li>
                  <li class="category">frontend</li>
                 <li class="category">backend</li>
@@ -42,7 +44,7 @@
 
              </ul>
 
-     </div>
+     </section>
 
 
 
@@ -50,8 +52,8 @@
 
 
 {#    screencasts #}
-    <div class="cardRow">
-         <div class=" screencast ">
+    <section class="cardRow">
+         <div class=" screencast">
             {% for lesson in lessons %}
               <img src="{% static 'images/cover.jpg' %}" alt="screencast cover">
 
@@ -60,10 +62,11 @@
          </div>
 
 
-    </div>
+    </section>
 
 
     {# include the same footer for ever page #}
     {% include "kutiva/layout/footer.html" %}
+    </main>
 {% endblock %}
 
