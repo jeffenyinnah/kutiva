@@ -8,13 +8,13 @@
 
 {# overide the tile of the page #}
 {% block title %}
-    <title>kutiva</title>
+    <title>kutiva Blog</title>
 {% endblock %}
 
 {% block styles %}
 {#    only include css  files needed for thi page bootstap and other libs are add in base template #}
     <link rel="stylesheet" href="{% static 'stylesheet/kutiva/menu.css' %}">
-    <link rel="stylesheet" href="{% static 'stylesheet/screencast/../../static/stylesheet/kutiva/main.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/screencast/screencast.css' %}">
 
 {% endblock %}
 
@@ -22,44 +22,57 @@
 
 {% block content %}
     {#    include the main menu #}
-    {% if user.is_authenticated %}
-         {#    include the main menu #}
-            {% include "screencast/layout/menu.html" %}
+     {% include "kutiva/layout/menu.html" %}
+      <section class="showcase">
 
-            
-        {% else %}
-            {% include "kutiva/layout/menu.html" %}
+           <h1>Educacao para todos</h1>
 
-    {% endif %}
-
-    <div class="showcase">
-            <form action="search" method="post">
-                <input type="search" placeholder="search">
-            </form>
+    </section>
+     <main>
 
 
-    </div>
-{#    categories #}
-    <diclearv class="container">
-        <div class="categories">
-             <ul class="category">
-                 <li>Android</li>
+        <aside class="articlesTags">
+                 <ul class="cardColumn unstyledList">
+                     <li class="category">Web Development</li>
+                     <li class="category">frontend</li>
+                    <li class="category">backend</li>
+                    <li class="category">android</li>
 
-             </ul>
+                    {% for lesson in lessons %}
+                      <li class="category"> Hwll{{ lesson.subject|capfirst }}</li>
+                    {% endfor %}
 
-        </div>
+                 </ul>
+
+         </aside>
+
+        <article class="articles">
+                 <div class="cardColumn article">
+                     <h1 class="title">Hello Word</h1>
+                 </div>
+
+         </article>
+
+
+
+
+
     {#    screencasts #}
-    <div class="screencasts">
-        <div class="screencast"><img src="" alt="screencast cover">
-            {% for lesson in lessons %}
-                <h2 class="title"><a href="{% url 'watch' lesson.id %}">{{ lesson.title|capfirst }}</a></h2>
-            {% endfor %}
-        </div>
+        <aside class="recommendScreencasts">
+             <div class="cardColumn recommendScreencast">
+                {% for lesson in lessons %}
+                  <img src="{% static 'images/cover.jpg' %}" alt="screencast cover">
 
-    </div>
+                    <h2 class="title"><a href="{% url 'watch' lesson.id %}">{{ lesson.title|capfirst }}</a></h2>
+                {% endfor %}
+             </div>
 
 
-    {# include the same footer for ever page #}
+        </aside>
+
+    </main>
+
+
     {% include "kutiva/layout/footer.html" %}
 {% endblock %}
 
