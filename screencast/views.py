@@ -8,12 +8,12 @@ def screencasts(request):
 
 
 
-def watch(request, id):
-    try:
-    	screencasts = Screencast.get(id=id)
-    except Screencast.DoesNotExist:
-        raise Http404('This item does not exist')
-    return render(request, 'kutiva/watch.html', {
-        'lesson': lesson,
-    })
-    
+def watch(request):
+    # try:
+    # 	screencasts = Screencast.get(id=id)
+    # except Screencast.DoesNotExist:
+    #     raise Http404('This item does not exist')
+    # return render(request, 'kutiva/watch.html', {
+    #     'lesson': lesson,
+    # })
+    return render(request, 'screencast/watch.html')

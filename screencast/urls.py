@@ -5,6 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.screencasts, name="screencasts"),
-    path('watch/<id>', views.watch, name="watch"),
+    path('watch', views.watch, name="watch"),
 
 ]
