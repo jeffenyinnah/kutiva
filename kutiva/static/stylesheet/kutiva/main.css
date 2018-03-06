@@ -6,6 +6,10 @@ html{
 
 
 }
+body{
+
+}
+
 .main{
   display: flex;
   flex-direction: column;
@@ -75,3 +79,4 @@ screencasts img{
     width: 255px;
     height: 200px;
 }
+
