@@ -21,12 +21,8 @@ from . import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name="index"),
-    path('account/', include('account.urls')),
-    path('screencast/', include('screencast.urls')),
-    # path('cms/', include('cms.urls')),
-    path('blog/', include('blog.urls')),
-    path('course/', include('course.urls'))
+
+    path('', views.course, name="course"),
+
 
 ]
