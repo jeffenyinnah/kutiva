@@ -37,3 +37,31 @@ input[type="submit"]{
     color: white;
     width: 200px;
 }
+
+@media all and (max-width: 575px) {
+    input{
+        width: 295px;
+    }
+    form{
+        padding: 0;
+    }
+    .logo{
+         margin-top: 50px;
+    }
+
+}
+
+
+@media all and (max-width: 768px) {
+
+
+}
+
+@media all and (max-width: 991px) {
+
+}
+
+@media all and (max-width: 1199px) {
+
+
+}
