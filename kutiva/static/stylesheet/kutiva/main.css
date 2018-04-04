@@ -67,13 +67,13 @@ form input[type="search"]{
     font-size: 18px;
 
 }
-.unstyledList{
+.screencastAuthor{
      margin-left: -40px;
     font-weight: normal;
 
     margin-top: -20px;
 }
-.unstyledList li{
+.screencastAuthor li{
     display: inline;
     font-size: 12px;
 
