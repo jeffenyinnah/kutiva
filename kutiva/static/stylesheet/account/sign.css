@@ -75,10 +75,16 @@ input[type="submit"]{
     input{
         width: 295px;
     }
+    .user{
+        display: block;
+    }
     .user input{
         width: 295px;
     }
 
+    .password{
+        display: block;
+    }
     .password input{
         width: 295px;
     }
