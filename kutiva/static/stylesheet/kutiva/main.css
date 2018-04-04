@@ -58,25 +58,45 @@ form input[type="search"]{
     background-color:#f9f9f9;
     padding: 10px;
 }
-
-.screencast{
-    width: 200px;
-    margin: 10px;
-    padding: 20px;
-
-    background-color: white;
-    box-shadow: 0 2px 1px rgba(0,0,0,.15)
-
-}
 .screencasts h1{
     font-size: 18px;
 
 }
+.unstyledList{
+     margin-left: -40px;
+    font-weight: normal;
 
-screencasts img{
-
-    display: block;
-    width: 255px;
-    height: 200px;
+    margin-top: -20px;
 }
+.unstyledList li{
+    display: inline;
+    font-size: 12px;
 
+}
+.title{
+    margin-top: -10px;
+}
+.screencast img{
+    display: block;
+    background-size: cover;
+    width: 290px;
+
+}
+.screencast{
+    background-color: white;
+    height: 310px;
+    width: 290px;
+    margin-bottom: 50px;
+    margin: 20px 10px 20px;
+    box-shadow: 0 2px 1px rgba(0,0,0,.15);
+    font-weight: bold;
+}
+.categoryCourse{
+    text-transform: uppercase;
+    border: 1px solid #009cf3;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    background-color: #009cf3;
+}

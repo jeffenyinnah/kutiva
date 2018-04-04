@@ -54,9 +54,18 @@
 
 {#    screencasts #}
     <section class="cardRow">
-         <div class=" screencast">
+         <div class="screencast">
+            <img src="{% static 'images/cover.jpeg' %}" alt="screencast cover" class="cover">
+            <p class="categoryCourse">Courso</p>
+
+            <h1 class="title">Hello Django</h1>
+             <ul class="unstyledList">
+                <li class="author">By Jose Machava - </li>
+                <li class="date">  30 March 2018</li>
+            </ul>
             {% for lesson in lessons %}
-              <img src="{% static 'images/cover.jpg' %}" alt="screencast cover">
+
+
 
                 <h2 class="title"><a href="{% url 'watch' lesson.id %}">{{ lesson.title|capfirst }}</a></h2>
             {% endfor %}
