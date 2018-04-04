@@ -10,8 +10,16 @@ body{
   justify-content: center;
   align-items: center;
 }
-form{
-    width: 400px;
+.formSigiIn{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    align-self: center;
+}
+.formSigiUp{
+    width: 500px;
     height: auto;
     padding: 20px;
     background-color: white;
@@ -20,7 +28,7 @@ form{
 }
 input{
     height: 44px;
-    width: 350px;
+    width: 480px;;
     margin: 10px;
     box-sizing: border-box;
     padding-left: 15px;
@@ -30,6 +38,29 @@ input{
     box-shadow: 0 2px 2px 0 rgba(46,60,73,.05);
     border-radius: 2px;
     color: #2e3d49;
+}
+.password{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.password input{
+    width: 220px;
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+
+.user input{
+    width: 220px;
 }
 
 input[type="submit"]{
@@ -42,6 +73,12 @@ input[type="submit"]{
 
 @media all and (max-width: 575px) {
     input{
+        width: 295px;
+    }
+    .user input{
+        width: 295px;
+    }
+    .password input{
         width: 295px;
     }
     form{

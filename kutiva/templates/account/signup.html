@@ -22,27 +22,36 @@
 
 {% block content %}
     {#    include the main menu #}
+    <main>
     <div class="sign">
-         <form action="" method="post" class="">
+         <form action="" method="post" class="formSigiUp">
               <h1 class="logo">kutiva</h1>
 
 
                {% csrf_token %}
 
-                    <input type="text" name="username"  placeholder="Username">
+                    <div class="user">
+                         <input type="text" name="first_name"  placeholder="First Name">
+                         <input type="text" name="last_name" placeholder="Last Name">
+
+                    </div>
+
                     <input type="email" name="email"   placeholder="Email adreess">
-                    <input type="password" name="password1"  placeholder="Password">
-                    <input type="password" name="password2" placeholder="Password">
-             
+                    <div class="password">
+                         <input type="password" name="password1"  placeholder="Password">
+                         <input type="password" name="password2" placeholder="Confirm Password">
+
+                    </div>
+
                
             <input type="submit" value="Sign Up">
               <p class="help-block">Already have an accont <a href="{% url 'signin' %}">Sign In</a></p>
           </form>
      
         </div>
-
+    </main>
 
     {# include the same footer for ever page #}
-
+ {% include "kutiva/layout/footer.html" %}
 {% endblock %}
 
