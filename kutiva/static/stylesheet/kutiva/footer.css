@@ -4,6 +4,7 @@ footer{
     margin-top: 20px;
     height: auto;
     text-align: center;
+    background-color: white;
 }
 footer ul li {
     font-size: 18px;
