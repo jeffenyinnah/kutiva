@@ -28,7 +28,7 @@ body{
     align-items: center;
     /*background-image: url("../../images/12.jpg");*/
 }
-.categorys{
+.categories{
     background-color: white;
     height:auto;
 }
@@ -104,4 +104,28 @@ form input[type="search"]{
     display: inline-block;
     font-size: 12px;
     background-color: #009cf3;
+}
+
+@media all and (max-width: 575px) {
+    .categories{
+        display: none;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+
+
+}
+
+@media all and (max-width: 991px) {
+
+}
+
+@media all and (max-width: 1199px) {
+
+
 }
