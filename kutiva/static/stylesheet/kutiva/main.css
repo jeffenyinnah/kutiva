@@ -33,8 +33,8 @@ body{
     height:auto;
 }
 .category{
-    border: 1px solid #009cf3;
-    background-color: #009cf3;
+    border: 1px solid #18427E;
+    background-color: #18427E;
     height: 7px;
     border-radius: 50px;
     padding: 15px;
@@ -98,12 +98,12 @@ form input[type="search"]{
 }
 .categoryCourse{
     text-transform: uppercase;
-    border: 1px solid #009cf3;
+    border: 1px solid #18427E;
     padding: 5px;
     color: white;
     display: inline-block;
     font-size: 12px;
-    background-color: #009cf3;
+    background-color: #18427E;
 }
 
 @media all and (max-width: 575px) {
