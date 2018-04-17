@@ -6,6 +6,7 @@ html{
 
 
 }
+
 body{
   display: flex;
   min-height: 100vh;
@@ -15,7 +16,7 @@ body{
 
 .main{
   font-family: 'Roboto', sans-serif;
-   flex: 1;
+  flex: 1;
 
 
 }
