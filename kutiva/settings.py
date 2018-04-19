@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
                   "kutiva.herokuapp.com",
                  ]
 
+AUTH_USER_MODEL = 'account.User'
 
 # Application definition
 

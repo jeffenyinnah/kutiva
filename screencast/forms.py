@@ -1,4 +1,4 @@
-from models import *
+from .models import *
 class ScreencastFrom(ModelForm):
     class Meta:
         model = Lesson

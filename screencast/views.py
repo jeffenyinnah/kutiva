@@ -1,10 +1,10 @@
 from django.http import Http404
 from django.shortcuts import render
-from .models import Screencast
+# from .models import Screencast
 
 def screencasts(request):
-    screencasts = Screencast.objects.all()
-    return render(request, 'screencast/screencasts.html', {"screencasts":screencasts})
+    # screencasts = Screencast.objects.all()
+    return render(request, 'screencast/screencasts.html',)
 
 
 

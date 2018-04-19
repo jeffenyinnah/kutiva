@@ -10,8 +10,7 @@ def signin(request):
     if request.method == 'POST':
         email = request.POST['username']
         password = request.POST['password']
-        username = User.objects.get(email=email.lower()).username
-        user = authenticate(username=username, password=password)
+        user = authenticate(username=email, password=password)
 
         if user is not None:
             login(request, user)
