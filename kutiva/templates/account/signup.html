@@ -29,19 +29,7 @@
 
 
                {% csrf_token %}
-
-                    <div class="user">
-                         <input type="text" name="first_name"  placeholder="First Name">
-                         <input type="text" name="last_name" placeholder="Last Name">
-
-                    </div>
-
-                    <input type="email" name="email"   placeholder="Email adreess">
-                    <div class="password">
-                         <input type="password" name="password1"  placeholder="Password">
-                         <input type="password" name="password2" placeholder="Confirm Password">
-
-                    </div>
+                {{ form }}
 
                
             <input type="submit" value="Sign Up">
