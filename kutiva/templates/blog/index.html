@@ -14,7 +14,6 @@
 {% block styles %}
 {#    only include css  files needed for thi page bootstap and other libs are add in base template #}
     <link rel="stylesheet" href="{% static 'stylesheet/kutiva/menu.css' %}">
-    <link rel="stylesheet" href="{% static 'stylesheet/kutiva/main.css' %}">
     <link rel="stylesheet" href="{% static 'stylesheet/kutiva/blog.css' %}">
     <link rel="stylesheet" href="{% static 'stylesheet/kutiva/footer.css' %}">
 {% endblock %}
@@ -54,17 +53,17 @@
 
 
     {#    screencasts #}
-        <aside class="recommendScreencasts">
-             <div class="cardColumn recommendScreencast">
-                {% for lesson in lessons %}
-                  <img src="{% static 'images/cover.jpg' %}" alt="screencast cover">
-
-                    <h2 class="title"><a href="{% url 'watch' lesson.id %}">{{ lesson.title|capfirst }}</a></h2>
-                {% endfor %}
-             </div>
-
-
-        </aside>
+{#        <aside class="recommendScreencasts">#}
+{#             <div class="cardColumn recommendScreencast">#}
+{#                {% for lesson in lessons %}#}
+{#                  <img src="{% static 'images/cover.jpg' %}" alt="screencast cover">#}
+{##}
+{#                    <h2 class="title"><a href="{% url 'watch' lesson.id %}">{{ lesson.title|capfirst }}</a></h2>#}
+{#                {% endfor %}#}
+{#             </div>#}
+{##}
+{##}
+{#        </aside>#}
 
     </main>
 
