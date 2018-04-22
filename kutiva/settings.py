@@ -44,9 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account',
+    'embed_video',
     'cms',
-    'screencast'
-   ,
+    'screencast',
+
   
     
 ]
