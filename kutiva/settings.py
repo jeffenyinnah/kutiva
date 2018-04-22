@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'embed_video',
     'cms',
     'screencast',
+    'course',
 
   
     

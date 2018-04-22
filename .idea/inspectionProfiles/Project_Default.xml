@@ -4,7 +4,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="65">
+          <list size="86">
             <item index="0" class="java.lang.String" itemvalue="python-systemd" />
             <item index="1" class="java.lang.String" itemvalue="html5lib" />
             <item index="2" class="java.lang.String" itemvalue="unity-scope-colourlovers" />
@@ -70,6 +70,27 @@
             <item index="62" class="java.lang.String" itemvalue="command-not-found" />
             <item index="63" class="java.lang.String" itemvalue="unity-scope-calculator" />
             <item index="64" class="java.lang.String" itemvalue="Pillow" />
+            <item index="65" class="java.lang.String" itemvalue="django-bootstrap-form" />
+            <item index="66" class="java.lang.String" itemvalue="gi" />
+            <item index="67" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="68" class="java.lang.String" itemvalue="django-crispy-forms" />
+            <item index="69" class="java.lang.String" itemvalue="amqp" />
+            <item index="70" class="java.lang.String" itemvalue="django-appconf" />
+            <item index="71" class="java.lang.String" itemvalue="kombu" />
+            <item index="72" class="java.lang.String" itemvalue="click" />
+            <item index="73" class="java.lang.String" itemvalue="algoliasearch-django" />
+            <item index="74" class="java.lang.String" itemvalue="celery" />
+            <item index="75" class="java.lang.String" itemvalue="certifi" />
+            <item index="76" class="java.lang.String" itemvalue="anyjson" />
+            <item index="77" class="java.lang.String" itemvalue="Flask-MySQL" />
+            <item index="78" class="java.lang.String" itemvalue="PyMySQL" />
+            <item index="79" class="java.lang.String" itemvalue="pytz" />
+            <item index="80" class="java.lang.String" itemvalue="django-celery" />
+            <item index="81" class="java.lang.String" itemvalue="itsdangerous" />
+            <item index="82" class="java.lang.String" itemvalue="algoliasearch" />
+            <item index="83" class="java.lang.String" itemvalue="billiard" />
+            <item index="84" class="java.lang.String" itemvalue="passlib" />
+            <item index="85" class="java.lang.String" itemvalue="Flask" />
           </list>
         </value>
       </option>
