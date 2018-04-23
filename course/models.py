@@ -28,8 +28,10 @@ class Lesson(models.Model):
     cover = models.ImageField(upload_to='images')
     video = EmbedVideoField(blank=True)
     date = models.DateField(default=django.utils.timezone.now)
-    """docstring for Lesson"""
 
+
+    def __str__(self):
+        return self.title
 
 class Course(models.Model):
     title = models.CharField(max_length=300)
@@ -41,4 +43,5 @@ class Course(models.Model):
     date = models.DateField(default=django.utils.timezone.now)
     """docstring for Lesson"""
 
-# # Create your models here.
+    def __str__(self):
+        return self.title
