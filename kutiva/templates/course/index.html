@@ -34,14 +34,10 @@
 
         <aside class="articlesTags">
                  <ul class="cardColumn unstyledList">
-                    <li class="">Web Development</li>
-                    <li class="">frontend</li>
-                    <li class="">backend</li>
-                    <li class="">android</li>
-
-                    {% for lesson in lessons %}
-                      <li class="category"> Hwll{{ lesson.subject|capfirst }}</li>
+                    {% for category in categories %}
+                       <li class="">{{ category.name }}</li>
                     {% endfor %}
+
 
                  </ul>
 
@@ -49,7 +45,9 @@
 
         <article class="articles">
                  <div class="cardColumn article">
-                     <h1 class="title">Hello Word</h1>
+                    {% for course in courses %}
+                      <h1 class="category"> {{ course.title|capfirst }}</h1>
+                    {% endfor %}
                  </div>
 
          </article>
