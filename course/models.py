@@ -9,7 +9,7 @@ class Subject(models.Model):
     date = models.DateField(default=django.utils.timezone.now)
 
     def __str__(self):
-        return self.subject
+        return self.name
 
 
 class Category(models.Model):
@@ -17,7 +17,7 @@ class Category(models.Model):
     date = models.DateField(default=django.utils.timezone.now)
 
     def __str__(self):
-        return self.category
+        return self.name
 
 
 class Lesson(models.Model):
