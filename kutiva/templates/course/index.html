@@ -13,6 +13,7 @@
 
 {% block styles %}
 {#    only include css  files needed for thi page bootstap and other libs are add in base template #}
+     <link rel="stylesheet" href="{% static 'stylesheet/kutiva/library/malangatana.min.css' %}">
 
     <link rel="stylesheet" href="{% static 'stylesheet/kutiva/menu.css' %}">
     <link rel="stylesheet" href="{% static 'stylesheet/course/course.css' %}">
@@ -33,9 +34,10 @@
 
 
         <aside class="articlesTags">
+                <p>category</p>
                  <ul class="cardColumn unstyledList">
                     {% for category in categories %}
-                       <li class="">{{ category.name }}</li>
+                       <li class="category">{{ category.name }}</li>
                     {% endfor %}
 
 
