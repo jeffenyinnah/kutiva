@@ -31,7 +31,9 @@ nav ul li a{
     color:black;
 
 }
-
+.menu{
+    display: none;
+}
 nav ul li a:hover{
     color: black;
 }
@@ -54,8 +56,18 @@ nav ul li a .signin{
     h1 a{
     text-decoration: none;
     color: black;
-    margin-left: 120px;
-}
+    }
+    .menu{
+        display: block;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .menuitem{
+        display: none;
+    }
+    .menu:hover menu{
+        display: block;
+    }
 }
 
 
